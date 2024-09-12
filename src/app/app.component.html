@@ -245,6 +245,58 @@
         </svg>
       </div>
     </div>
-    <div class="rightCard">INPUTS COMES HERE</div>
+    <!-- <div class="rightCard">
+      <app-user-entry></app-user-entry>
+
+    </div> -->
+    <div class="rightCard">
+      <div *ngIf="userExists === null">
+        <div class="flex-container">
+          <h2>Welcome</h2>
+          <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  [(ngModel)]="email"
+                  name="email"
+                  placeholder="enter full name"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div>
+                <label for="phone">Phone Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  [(ngModel)]="phone"
+                  name="phone"
+                  placeholder="+91"
+                />
+              </div>
+
+            </div>
+            <button type="submit" class="">Continue</button>
+          </form>
+        </div>      </div>
+      <div *ngIf="userExists === true">
+        <app-login></app-login>
+      </div>
+      <div *ngIf="userExists === false">
+        <app-signup></app-signup>
+      </div>
+    </div>
+
   </div>
 </div>
+
+
+<!-- <div>
+  <div class="leftCard"></div>
+  <div class="rightCard">input comes here</div>
+</div> -->

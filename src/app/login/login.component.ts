@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { FormsModule } from '@angular/forms'; // Import FormsModule for ngModel
 
 @Component({
-  selector: 'login-root',
+  selector: 'app-login',
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './login.component.html',

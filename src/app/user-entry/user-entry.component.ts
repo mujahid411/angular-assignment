@@ -25,9 +25,9 @@ export class UserEntryComponent {
           const queryParams = this.email
             ? { email: this.email }
             : { phone: this.phone };
-          this.router.navigate(['/login'], { queryParams });
+          // this.router.navigate(['/login'], { queryParams });
         } else {
-          this.router.navigate(['/signup']);
+          // this.router.navigate(['/signup']);
         }
       });
   }
