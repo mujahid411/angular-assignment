@@ -26,7 +26,7 @@ import { Svg2Component } from '../svg-2/svg-2.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule, // Add FormsModule to the imports array
+    FormsModule, 
     AppRoutingModule,
   ],
   providers: [],

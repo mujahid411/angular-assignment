@@ -49,7 +49,6 @@
 /* Media Queries for responsiveness */
 
 @media (max-width: 1200px) {
-  /* Adjust card size for medium screens */
   .card {
     width: 100%;
     height: auto;
@@ -61,7 +60,6 @@
 }
 
 @media (max-width: 900px) {
-  /* Stack the cards vertically on smaller screens */
   .card {
     flex-direction: column;
     width: 90%;
@@ -81,7 +79,6 @@
 }
 
 @media (max-width: 600px) {
-  /* Make the layout fit better on mobile */
   .card {
     flex-direction: column;
     width: 100%;

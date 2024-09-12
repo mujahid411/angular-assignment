@@ -44,9 +44,10 @@ export class AppComponent {
         this.userExists = exists;
         console.log(this.userExists, 'userexist');
         if (exists) {
-          this.router.navigate(['/login']); // Navigate to login
+          this.router.navigate(['/login']);
         } else {
-          this.router.navigate(['/signup']); // Navigate to signup
+          this.router.navigate(['/signup']);
+          
         }
       });
   }

@@ -1,74 +1,87 @@
-<div class="container">
+<div class="">
+   <a href="sign-up" id="back-button">↰ Go Back</a>
   <h2>Create Account</h2>
   <div class="loader"></div>
   <div class="loader"></div>
-  <form>
-    <div class="form-group">
-      <label for="organisation-name">Organisation-name</label>
-      <input
-        type="organisation-name"
-        class="form-control"
-        id="organisation-name"
-        [(ngModel)]="organisation-name"
-        name="organisation-name"
-        placeholder="organisation-name address"
-      />
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-gaps">
+      <div>
+        <label for="organization">Organization Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="organization"
+          [(ngModel)]="user.organization"
+          name="organization"
+          placeholder="Organization name"
+        />
+      </div>
     </div>
-    <div class="orgaisation-id">
-      <label for="orgaisation-id">Orgaisation-id</label>
-      <input
-        type="text"
-        class="form-control"
-        id="orgaisation-id"
-        [(ngModel)]="orgaisation-id"
-        name="orgaisation-id"
-        placeholder="organisation-id"
-      />
+
+    <div class="form-gaps">
+      <div>
+        <label for="organizationId">Organization ID</label>
+        <input
+          type="text"
+          class=""
+          id="organizationId"
+          [(ngModel)]="user.organizationId"
+          name="organizationId"
+          placeholder="Organization ID"
+        />
+      </div>
     </div>
-    <div class="form-group">
+
+    <div class="form-gaps">
       <label for="designation">Designation</label>
       <input
-        type="designation"
-        class="form-control"
+        type="text"
+        class=""
         id="designation"
-        [(ngModel)]="designation"
+        [(ngModel)]="user.designation"
         name="designation"
-        placeholder="designation"
+        placeholder="Designation"
       />
     </div>
-    <div class="form-group">
-      <label for="birth-date">Birth-date</label>
+
+    <div class="form-gaps">
+      <label for="birth-date">Birth Date</label>
       <input
-        type="birth-date"
+        type="date"
         class="form-control"
         id="birth-date"
-        [(ngModel)]="birth-date"
-        name="birth-date"
-        placeholder="birth-date"
+        [(ngModel)]="user.birthDate"
+        name="birthDate"
+        placeholder="Birth date"
       />
     </div>
-    <div class="form-group">
-      <label for="birth-date"></label>
-      <input
-        type="birth-date"
-        class="form-control"
-        id="birth-date"
-        [(ngModel)]="birth-date"
-        name="birth-date"
-        placeholder="birth-date"
-      />
+
+    <div class="two-inputs">
+      <div class="">
+        <label for="city">City</label>
+        <input
+          type="text"
+          class="inline-input"
+          id="city"
+          [(ngModel)]="user.city"
+          name="city"
+          placeholder="City"
+        />
+      </div>
+      <div class="">
+        <label for="pincode">Pincode</label>
+        <input
+          type="text"
+          class="inline-input"
+          id="pincode"
+          [(ngModel)]="user.pincode"
+          name="pincode"
+          placeholder="Pincode"
+          maxlength="6"
+        />
+      </div>
     </div>
-    <div class="form-group">
-      <label for="birth-date">Birth-date</label>
-      <input
-        type="birth-date"
-        class="form-control"
-        id="birth-date"
-        [(ngModel)]="birth-date"
-        name="birth-date"
-        placeholder="birth-date"
-      />
-    </div>
-    <button type="submit" class="btn btn-primary">Sign Up</button>
+
+    <button type="submit" class="btn btn-primary">Sign up</button>
   </form>
 </div>

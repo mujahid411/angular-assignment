@@ -4,12 +4,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserEntryComponent } from './user-entry/user-entry.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import { AppComponent } from './app.component'; // Import AppComponent
+import { SignUp2Component } from './sign-up-2/sign-up-2.component';
+import { LoginSuccessfulComponent } from './login-successful/login-successful.component';
+import { SolvedComponent } from './solved/solved.component';
 
 export const routes: Routes = [
   { path: '', component: UserEntryComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'login-successful', component: LoginSuccessfulComponent },
+  { path: 'solved', component: SolvedComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'sign-up-2', component: SignUp2Component },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
