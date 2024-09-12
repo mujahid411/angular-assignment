@@ -1,27 +1,33 @@
-# UserAuthApp
+# Angular Authentication App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+A simple Angular-based authentication app demonstrating user login with mock data for email/phone and password. The app features form validation, routing, and error handling, offering a smooth login experience with Angular services and reactive forms.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Login with Email/Phone and Password**
+- **Mock Data for Authentication**
+- **Error Handling for Invalid Credentials**
+- **Angular Routing for Login, Signup, and Success Pages**
+- **Basic Reactive Forms Handling**
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Frontend framework
+- **TypeScript**: For development
+- **RxJS**: To handle asynchronous data streams
+- **HTML/CSS**: For UI and styling
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+- **Node.js** and **npm** should be installed.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installation
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/angular-auth-app.git
+   cd angular-auth-app
+2. Start the server with this command
+    ng serve
