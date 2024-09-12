@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { SolvedComponent } from './solved/solved.component';
 import { LoginSuccessfulComponent } from './login-successful/login-successful.component';
+import { Svg1Component } from '../svg-1/svg-1.component';
+import { Svg2Component } from '../svg-2/svg-2.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { LoginSuccessfulComponent } from './login-successful/login-successful.co
     LoginComponent,
     SignupComponent,
     SolvedComponent,
-    LoginSuccessfulComponent
+    LoginSuccessfulComponent,
+    Svg1Component,
+    Svg2Component,
   ],
   imports: [
     BrowserModule,

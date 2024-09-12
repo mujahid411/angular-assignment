@@ -13,21 +13,30 @@ import { FormsModule } from '@angular/forms';
 export class UserEntryComponent {
   email: string = '';
   phone: string = '';
+  userExists: boolean | null = null;
 
   constructor(private authService: AuthService, private router: Router) {}
 
   onSubmit() {
+    // Check if the user exists by email or phone
     this.authService
       .checkUserExists(this.email, this.phone)
-      .subscribe((userExists: boolean) => {
-        if (userExists) {
-          // Pass the email or phone as a query parameter when navigating to the login page
-          const queryParams = this.email
-            ? { email: this.email }
-            : { phone: this.phone };
-          // this.router.navigate(['/login'], { queryParams });
+      .subscribe((exists: boolean) => {
+        this.userExists = exists;
+        const queryParams: any = {};
+        if (this.email) {
+          queryParams.email = this.email;
+        }
+        if (this.phone) {
+          queryParams.phone = this.phone;
+        }
+
+        if (exists) {
+          // Navigate to login with queryParams if they exist
+          this.router.navigate(['/login'], { queryParams });
         } else {
-          // this.router.navigate(['/signup']);
+          // Navigate to signup with queryParams if they exist
+          this.router.navigate(['/signup'], { queryParams });
         }
       });
   }

@@ -1,26 +1,30 @@
-<form (ngSubmit)="onSubmit()" class="main-container">
-  <!-- Show email input if email is provided in the query parameters -->
-  <div *ngIf="email">
-    <label for="email">Email:</label>
-    <input type="email" id="email" [(ngModel)]="email" name="email" />
-  </div>
+<div class="flex-container">
+  <form (ngSubmit)="onSubmit()" class="main-container">
+    <div class="form-group">
+      <div *ngIf="email">
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="email" name="email" />
+      </div>
 
-  <!-- Show phone input if phone is provided in the query parameters -->
-  <div *ngIf="phone">
-    <label for="phone">Phone:</label>
-    <input type="text" id="phone" [(ngModel)]="phone" name="phone" />
-  </div>
+      <!-- Show phone input if phone is provided in the query parameters -->
+      <div *ngIf="phone">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" [(ngModel)]="phone" name="phone" />
+      </div>
+    </div>
+    <!-- Show email input if email is provided in the query parameters -->
 
-  <!-- Password input -->
-  <div>
-    <label for="password">Password:</label>
-    <input
-      type="password"
-      id="password"
-      [(ngModel)]="password"
-      name="password"
-    />
-  </div>
+    <!-- Password input -->
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        [(ngModel)]="password"
+        name="password"
+      />
+    </div>
 
-  <button type="submit">Login</button>
-</form>
+    <button type="submit">Login</button>
+  </form>
+</div>
