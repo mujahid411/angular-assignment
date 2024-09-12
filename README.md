@@ -29,5 +29,19 @@ A simple Angular-based authentication app demonstrating user login with mock dat
    ```bash
    git clone https://github.com/your-username/angular-auth-app.git
    cd angular-auth-app
-2. Start the server with this command
-    ng serve
+2. Install the dependencies:
+   ```bask
+   npm install
+3. Start the server with this command:
+   ```bash
+   ng serve
+
+The app will be accessible at `http://localhost:4200`.
+
+### Testing the App
+
+To test the login functionality, you can use the following mock user credentials:
+
+- **Email**: `user1@example.com`
+- **Password**: `password1`
+
