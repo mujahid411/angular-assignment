@@ -28,7 +28,7 @@ A simple Angular-based authentication app demonstrating user login with mock dat
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/angular-auth-app.git
-   cd angular-auth-app
+   cd angular-assignment
 2. Install the dependencies:
    ```bask
    npm install
@@ -45,3 +45,6 @@ To test the login functionality, you can use the following mock user credentials
 - **Email**: `user1@example.com`
 - **Password**: `password1`
 
+You can also access the hosted version of the app at:
+
+- **Hosted URL**: [https://angular-assignment-teal.vercel.app/](https://angular-assignment-teal.vercel.app/)
