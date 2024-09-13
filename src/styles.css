@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .flex-container {
@@ -18,11 +18,10 @@ body {
   margin-top: 5rem;
 }
 
-.flex-container>*+* {
+.flex-container > * + * {
   margin-top: 0rem;
   text-align: left;
 }
-
 
 label {
   display: block;
@@ -35,7 +34,7 @@ label {
 input {
   width: 333px;
   height: 44px;
-  background: #E4ECEE;
+  background: #e4ecee;
   border-radius: 16px;
   color: #767676;
   opacity: 0.7;
@@ -49,8 +48,7 @@ input {
   padding: 10px 96px 10px 16px;
   gap: 10px;
   border: 0px solid #767676;
-  }
-
+}
 
 button {
   width: 332px;
@@ -59,19 +57,19 @@ button {
   gap: 10px;
   border-radius: 16px;
   opacity: 0px;
-  background: #0069D1;
+  background: #0069d1;
   color: white;
-  border-color: #0069D1;
+  border-color: #0069d1;
   cursor: pointer;
 }
 
-label{
-  color:#0069D1;
+label {
+  color: #0069d1;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.end-container{
+.end-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,25 +78,25 @@ label{
   margin: 0 5rem;
 }
 
-.end-text{
+.end-text {
   margin-top: 2rem;
 }
 
-.loader{
+.loader {
   width: 160px;
   height: 8px;
-  background: #0069D1;
-  border: #0069D1;
+  background: #0069d1;
+  border: #0069d1;
   border-radius: 16px;
   margin-top: 1rem;
   margin-right: 0.2rem;
   display: inline-block;
 }
-.loader-empty{
+.loader-empty {
   width: 160px;
   height: 8px;
   background: #dee0e0;
-  border: #0069D1;
+  border: #0069d1;
   border-radius: 16px;
   margin-top: 1rem;
   display: inline-block;
@@ -113,7 +111,7 @@ label{
 
 .inline-input {
   width: 333px;
-  background: #E4ECEE;
+  background: #e4ecee;
   border-radius: 16px;
   color: #767676;
   opacity: 0.7;
@@ -122,7 +120,7 @@ label{
   align-items: center;
   padding: 10px 16px;
   gap: 10px;
-  border: 1.5px solid #0069D1;
+  border: 1.5px solid #0069d1;
   margin-right: 10px;
 }
 
@@ -131,24 +129,23 @@ label{
   width: 160px;
 }
 
-.form-gaps{
+.form-gaps {
   margin-bottom: 1rem;
 }
 
-#back-button{
+#back-button {
   text-decoration: none;
-  color:#0069D1;
+  color: #0069d1;
   cursor: pointer;
 }
 
-.error-message{
-  color:red;
+.error-message {
+  color: red;
   font-size: 12px;
   margin: 2rem 0;
 }
 
-
-
-
-
-
+.or {
+  color: #b3b0b0;
+  margin: 2rem 0;
+}
